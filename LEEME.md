@@ -6,7 +6,7 @@ Toca la portada para comenzar. Las indicaciones, los controles y la barra pulsan
 
 Los controles usan `Fondo_Controles.png` y los iconos independientes. Cada icono usa su versión azul al presionarlo y vuelve a blanco al soltar, sin colorear el fondo. El botón central muestra Pause durante la reproducción y Start cuando el video está pausado, también durante las instrucciones.
 
-Durante las instrucciones se muestra `Images/Video_Indicaciones.jpg`, un fotograma extraído a los 0.5 segundos del video de prueba, y la barra se mantiene al 50 % con el punto centrado. El video sigue detenido en cero. Después de los 7 segundos se retira la imagen y la barra refleja el progreso real. Al cambiar el video, reemplaza también esta imagen por un fotograma del nuevo archivo.
+Durante las instrucciones se muestra el propio video, pausado en el segundo 1 (o a la mitad si dura menos de 2 segundos). La portada permanece visible hasta que el fotograma está listo. La barra de demostración se mantiene al 50 %. Después de 7 segundos, el video se reproduce desde cero. Al sustituir Images/Video.mp4 ya no hace falta actualizar una imagen independiente.
 
 Para reemplazar el video, guarda el nuevo archivo como `Images/Video.mp4` y recarga la página. Usa MP4 compatible con el navegador (habitualmente H.264/AAC). El video ocupa todo el lienzo vertical mediante `object-fit: cover`: en el video horizontal de prueba se recortan los lados. Para mostrarlo completo con franjas cambia `object-fit: cover` por `object-fit: contain` en la regla `#video` de `styles.css`.
 
